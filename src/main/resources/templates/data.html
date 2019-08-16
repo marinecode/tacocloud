@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>data</title>
+</head>
+<body>
+    <h1>All tacos</h1>
+    <div >
+        <p th:each =" taco : ${tacos} ">
+            <span th:text = "${taco.id}">ID</span>
+            <span th:text = "${taco.name}">NAME</span>
+            <span th:text = "${taco.createdAt}">DATE</span>
+        </p>
+    </div>
+
+
+</body>
+</html>
